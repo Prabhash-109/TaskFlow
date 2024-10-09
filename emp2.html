@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="emp1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="review4.png" alt="Profile">
+        <span>Prateek</span>
+        <a href="admin.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fa-solid fa-clipboard-user"></i><span>Tasks</span></a>
+        <a href="index.html" id="logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div class="welcome">
+                <h1>Welcome, Prateek!</h1>
+                <p>Check Task Progress</p>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search...">
+            </div>
+        </div>
+        <div class="task-assigned">
+            <h2>Tasks Assigned To You</h2>
+            <div class="task-list">
+                <div class="task-item">
+                    <span>Task-1</span>
+                    <button id="done">Mark as Done</button>
+                    <span class="date"><i class="fa-solid fa-circle-dot" style="color: #ff0000;"></i> Today</span>
+                </div>
+                <div class="task-item">
+                    <span>Task-2</span>
+                    <button id="done">Mark as Done</button>
+                    <span class="date"><i class="fa-solid fa-circle-dot" style="color: #ff0000;"></i> 21 September</span>
+                </div>
+                <div class="task-item">
+                    <span>Task-3</span>
+                    <button id="done">Mark as Done</button>
+                    <span class="date"><i class="fa-solid fa-circle-dot" style="color: #ff0000;"></i> 20 September</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h2>Team you are Working With</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="review1.png" alt="Prabhash">
+                        <p>Prabhash (Admin)</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="review3.png" alt="Pulkit">
+                        <p>Pulkit</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="review4.png" alt="Prateek">
+                        <p>Prateek</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Send a Message to your Team</h2>
+                <form>
+                    <label for="message-to">To:</label>
+                    <select id="message-to">
+                        <option value="Prabhash">Prabhash (Admin)</option>
+                        <option value="Pulkit">Pulkit</option>
+                    </select>
+                    <label for="message-content">Message:</label>
+                    <textarea id="message-content" cols="30" rows="5" placeholder="Enter Message..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
